@@ -28,4 +28,16 @@ internal class MainInteractor: MainInteractorProtocol {
             onRequestFailed: presenter.onFailed(error:)
         )
     }
+    
+    internal func getForecast(city: String) {
+        guard let presenter = presenter else {
+            return
+        }
+        
+        self.repository.getForecast(
+            city: city,
+            onRequestSuccess: presenter.onSuccessForecast(model:),
+            onRequestFailed: presenter.onFailedForecast(error:)
+        )
+    }
 }

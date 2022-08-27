@@ -6,3 +6,9 @@
 //
 
 import Foundation
+import UIKit
+
+internal protocol MainRouterProtocol {
+    static func BuildController(view: MainViewControllerProtocol)
+    func navToController(navController: UINavigationController, controller: UIViewController)
+}

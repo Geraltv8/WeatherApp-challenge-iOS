@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ForecastViewController" customModule="WeatherApp" customModuleProvider="target">
+            <connections>
+                <outlet property="forecastCollectionView" destination="Jie-0D-CN6" id="PLh-PE-yD8"/>
+                <outlet property="view" destination="mvB-dL-alN" id="HUm-pc-hFf"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="mvB-dL-alN" userLabel="Forecast View">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Jie-0D-CN6">
+                    <rect key="frame" x="20" y="64" width="374" height="778"/>
+                    <color key="backgroundColor" red="0.54738350820000004" green="0.8741497735" blue="0.92242828020000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="20" minimumInteritemSpacing="10" id="gbJ-9X-jnz">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="20" minY="20" maxX="20" maxY="20"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="ZGp-vx-rTe"/>
+            <color key="backgroundColor" red="0.76800264289999998" green="0.95021296200000005" blue="0.93143167410000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Jie-0D-CN6" firstAttribute="top" secondItem="ZGp-vx-rTe" secondAttribute="top" constant="20" id="2mO-cj-NWo"/>
+                <constraint firstItem="ZGp-vx-rTe" firstAttribute="trailing" secondItem="Jie-0D-CN6" secondAttribute="trailing" constant="20" id="8aB-5L-XrA"/>
+                <constraint firstItem="Jie-0D-CN6" firstAttribute="leading" secondItem="ZGp-vx-rTe" secondAttribute="leading" constant="20" id="OWI-d5-gW5"/>
+                <constraint firstItem="ZGp-vx-rTe" firstAttribute="bottom" secondItem="Jie-0D-CN6" secondAttribute="bottom" constant="20" id="psS-Jp-hkg"/>
+            </constraints>
+            <point key="canvasLocation" x="-38" y="38"/>
+        </view>
+    </objects>
+</document>

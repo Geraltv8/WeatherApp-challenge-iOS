@@ -7,8 +7,7 @@
 
 import Foundation
 
-internal struct WeatherDTO : Codable {
+internal struct WeatherDTO: Codable {
     internal let location: LocationDTO
     internal let current: CurrentDTO
-    internal let forecast: ForecastDTO?
 }

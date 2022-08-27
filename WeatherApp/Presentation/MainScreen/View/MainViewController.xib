@@ -4,23 +4,116 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController" customModule="WeatherApp" customModuleProvider="target">
+            <connections>
+                <outlet property="CurrentView" destination="Gxc-Ge-VFO" id="BDr-4x-A1M"/>
+                <outlet property="checkCurrent" destination="r1q-Ft-iO6" id="B9d-Ga-5e9"/>
+                <outlet property="cityPickerView" destination="frf-4j-wTe" id="tRf-XZ-yQf"/>
+                <outlet property="seeForecast" destination="ndn-7a-zjl" id="JhL-kz-sCq"/>
+                <outlet property="subTitleLabel" destination="NM5-qe-1v5" id="CRj-gR-3I2"/>
+                <outlet property="titleLabel" destination="lwt-xU-PhJ" id="5ZY-EZ-i4f"/>
+                <outlet property="view" destination="iN0-l3-epB" id="RHg-KG-X8s"/>
+            </connections>
+        </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Etc-p6-0By">
-                    <rect key="frame" x="20" y="222" width="374" height="318"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                </stackView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WeatherApp by Gerardo Ramirez" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lwt-xU-PhJ" userLabel="Title">
+                    <rect key="frame" x="40" y="74" width="334" height="72"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                    <color key="textColor" systemColor="linkColor"/>
+                    <color key="highlightedColor" systemColor="labelColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select the country to check the weather" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NM5-qe-1v5" userLabel="SubTitle">
+                    <rect key="frame" x="20" y="176" width="374" height="55"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="frf-4j-wTe">
+                    <rect key="frame" x="0.0" y="251" width="414" height="216"/>
+                </pickerView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gxc-Ge-VFO" customClass="CurrentView" customModule="WeatherApp" customModuleProvider="target">
+                    <rect key="frame" x="10" y="612" width="394" height="240"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r1q-Ft-iO6">
+                    <rect key="frame" x="20" y="491" width="374" height="53"/>
+                    <color key="tintColor" systemColor="linkColor"/>
+                    <buttonConfiguration key="configuration" style="plain" cornerStyle="capsule" buttonSize="large" titleAlignment="center">
+                        <backgroundConfiguration key="background">
+                            <color key="backgroundColor" red="0.54738350822522763" green="0.87414977345881451" blue="0.92242828023681889" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </backgroundConfiguration>
+                        <attributedString key="attributedTitle">
+                            <fragment content="Check current weather">
+                                <attributes>
+                                    <font key="NSFont" size="20" name="Helvetica"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="checkWeatherTouchInSide:" destination="-1" eventType="touchUpInside" id="eDc-0Q-x7r"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ndn-7a-zjl" userLabel="Check Forecast">
+                    <rect key="frame" x="20" y="549" width="374" height="53"/>
+                    <color key="tintColor" systemColor="linkColor"/>
+                    <buttonConfiguration key="configuration" style="plain" cornerStyle="capsule" buttonSize="large" titleAlignment="center">
+                        <backgroundConfiguration key="background">
+                            <color key="backgroundColor" red="0.54738350820000004" green="0.8741497735" blue="0.92242828020000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </backgroundConfiguration>
+                        <attributedString key="attributedTitle">
+                            <fragment content="See forecast">
+                                <attributes>
+                                    <font key="NSFont" size="20" name="Helvetica"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="seeForecastTouchInSide:" destination="-1" eventType="touchUpInside" id="Ea3-5q-Jjo"/>
+                    </connections>
+                </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" red="0.76800264291634757" green="0.95021296204859396" blue="0.93143167413731498" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Gxc-Ge-VFO" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="2o1-81-mRt"/>
+                <constraint firstItem="NM5-qe-1v5" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="3S4-sA-XLI"/>
+                <constraint firstItem="lwt-xU-PhJ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="40" id="4us-iv-zza"/>
+                <constraint firstItem="ndn-7a-zjl" firstAttribute="top" secondItem="r1q-Ft-iO6" secondAttribute="bottom" constant="5" id="Da0-UC-9sk"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Gxc-Ge-VFO" secondAttribute="bottom" constant="10" id="HN9-W2-JFa"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="r1q-Ft-iO6" secondAttribute="trailing" constant="20" id="K6u-PK-AYF"/>
+                <constraint firstItem="frf-4j-wTe" firstAttribute="top" secondItem="NM5-qe-1v5" secondAttribute="bottom" constant="20" id="L2D-6m-VKF"/>
+                <constraint firstItem="Gxc-Ge-VFO" firstAttribute="top" secondItem="ndn-7a-zjl" secondAttribute="bottom" constant="10" id="L4S-5O-NFv"/>
+                <constraint firstItem="r1q-Ft-iO6" firstAttribute="top" secondItem="frf-4j-wTe" secondAttribute="bottom" constant="24" id="L6Q-F8-dDa"/>
+                <constraint firstItem="lwt-xU-PhJ" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="30" id="LIk-rr-COd"/>
+                <constraint firstItem="r1q-Ft-iO6" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="LTG-K9-KDy"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="frf-4j-wTe" secondAttribute="trailing" id="VK2-Sp-DV8"/>
+                <constraint firstItem="frf-4j-wTe" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="ZC9-s3-aEq"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Gxc-Ge-VFO" secondAttribute="trailing" constant="10" id="qhj-Jh-VTz"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="ndn-7a-zjl" secondAttribute="trailing" constant="20" id="rNA-Ia-ifh"/>
+                <constraint firstItem="NM5-qe-1v5" firstAttribute="top" secondItem="lwt-xU-PhJ" secondAttribute="bottom" constant="30" id="ug3-YK-dUz"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="lwt-xU-PhJ" secondAttribute="trailing" constant="40" id="uws-Qg-nx8"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="NM5-qe-1v5" secondAttribute="trailing" constant="20" id="yPb-iL-o3f"/>
+                <constraint firstItem="ndn-7a-zjl" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="ybo-qj-BdT"/>
+            </constraints>
             <point key="canvasLocation" x="131.8840579710145" y="31.473214285714285"/>
         </view>
     </objects>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>

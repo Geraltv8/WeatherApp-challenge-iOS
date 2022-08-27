@@ -7,7 +7,7 @@
 
 import Foundation
 
-internal struct LocationDTO : Codable {
+internal struct LocationDTO: Codable {
     internal let name: String?
     internal let country: String?
     internal let region: String?

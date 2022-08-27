@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailCellView.xib"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="7th-dm-FbV" customClass="DetailCellView" customModule="WeatherApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="5qA-kP-sf1">
+                <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="date" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j5C-4b-t53" userLabel="Date">
+                        <rect key="frame" x="20" y="8" width="110" height="24"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weather" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qi9-1d-MCe" userLabel="Weather">
+                        <rect key="frame" x="10" y="35" width="130" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Max:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4t7-N0-x2K" userLabel="Max Label">
+                        <rect key="frame" x="10" y="63" width="33" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 ºC" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kIV-OM-1ao" userLabel="Max Temp Label">
+                        <rect key="frame" x="58" y="63" width="76" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Min:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RjT-dH-aht" userLabel="Min Label">
+                        <rect key="frame" x="10" y="91" width="36" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="0 ºC" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FSJ-MX-dIx" userLabel="Min Temp Label">
+                        <rect key="frame" x="57" y="91" width="73" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="73" id="Sdr-Az-CJa"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" red="0.18964951360000001" green="0.6664390724" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstItem="kIV-OM-1ao" firstAttribute="leading" secondItem="4t7-N0-x2K" secondAttribute="trailing" constant="15" id="15S-Zj-n2Y"/>
+                    <constraint firstItem="RjT-dH-aht" firstAttribute="leading" secondItem="5qA-kP-sf1" secondAttribute="leading" constant="10" id="1XJ-Dd-OLk"/>
+                    <constraint firstItem="FSJ-MX-dIx" firstAttribute="leading" secondItem="RjT-dH-aht" secondAttribute="trailing" constant="11" id="AlQ-Ac-gfj"/>
+                    <constraint firstItem="RjT-dH-aht" firstAttribute="top" secondItem="4t7-N0-x2K" secondAttribute="bottom" constant="10" id="FdL-wy-5HS"/>
+                    <constraint firstItem="4t7-N0-x2K" firstAttribute="top" secondItem="qi9-1d-MCe" secondAttribute="bottom" constant="10" id="HiG-zN-gcj"/>
+                    <constraint firstItem="j5C-4b-t53" firstAttribute="top" secondItem="5qA-kP-sf1" secondAttribute="top" constant="8" id="I8G-ez-bwN"/>
+                    <constraint firstItem="j5C-4b-t53" firstAttribute="leading" secondItem="5qA-kP-sf1" secondAttribute="leading" constant="20" id="K4w-t3-UM7"/>
+                    <constraint firstItem="FSJ-MX-dIx" firstAttribute="top" secondItem="kIV-OM-1ao" secondAttribute="bottom" constant="10" id="OOr-BB-cKp"/>
+                    <constraint firstItem="qi9-1d-MCe" firstAttribute="top" secondItem="j5C-4b-t53" secondAttribute="bottom" constant="3" id="PQr-Zi-PeE"/>
+                    <constraint firstItem="kIV-OM-1ao" firstAttribute="top" secondItem="qi9-1d-MCe" secondAttribute="bottom" constant="10" id="Pao-oY-06T"/>
+                    <constraint firstItem="qi9-1d-MCe" firstAttribute="leading" secondItem="5qA-kP-sf1" secondAttribute="leading" constant="10" id="TLl-Nv-pQW"/>
+                    <constraint firstItem="4t7-N0-x2K" firstAttribute="leading" secondItem="5qA-kP-sf1" secondAttribute="leading" constant="10" id="VnL-2P-gxk"/>
+                    <constraint firstAttribute="bottom" secondItem="RjT-dH-aht" secondAttribute="bottom" constant="41" id="Wxk-pC-dvu"/>
+                    <constraint firstAttribute="trailing" secondItem="j5C-4b-t53" secondAttribute="trailing" constant="20" id="eZg-s6-Aai"/>
+                    <constraint firstAttribute="trailing" secondItem="kIV-OM-1ao" secondAttribute="trailing" constant="16" id="epl-oZ-wrm"/>
+                    <constraint firstAttribute="bottom" secondItem="FSJ-MX-dIx" secondAttribute="bottom" constant="41" id="hY0-iL-rTe"/>
+                    <constraint firstAttribute="trailing" secondItem="FSJ-MX-dIx" secondAttribute="trailing" constant="20" id="qMy-1I-TKI"/>
+                    <constraint firstAttribute="trailing" secondItem="qi9-1d-MCe" secondAttribute="trailing" constant="10" id="tNh-3N-zle"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="111" height="111"/>
+            <connections>
+                <outlet property="dateLabel" destination="j5C-4b-t53" id="qZS-y3-oCh"/>
+                <outlet property="maxLabel" destination="4t7-N0-x2K" id="tQX-jL-Ya4"/>
+                <outlet property="maxTempLabel" destination="kIV-OM-1ao" id="pYB-VU-mud"/>
+                <outlet property="minLabel" destination="RjT-dH-aht" id="lk5-gU-SbD"/>
+                <outlet property="minTempLabel" destination="FSJ-MX-dIx" id="LI5-1L-QsE"/>
+                <outlet property="weatherLabel" destination="qi9-1d-MCe" id="bw2-Yx-u7N"/>
+            </connections>
+            <point key="canvasLocation" x="15.942028985507248" y="96.428571428571431"/>
+        </collectionViewCell>
+    </objects>
+</document>

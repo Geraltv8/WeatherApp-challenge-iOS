@@ -9,5 +9,8 @@ import Foundation
 
 internal protocol MainInteractorDelegate {
     func onSuccess(model: WeatherModel)
-    func onFailed(error: Error?)
+    func onFailed(error: APIErrorModel)
+    
+    func onSuccessForecast(model: ForecastModel)
+    func onFailedForecast(error: Error?)
 }

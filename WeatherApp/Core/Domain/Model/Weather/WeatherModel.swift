@@ -10,5 +10,4 @@ import Foundation
 internal struct WeatherModel {
     internal let location: LocationModel
     internal let current: CurrentModel
-    internal let forecast: ForecastModel?
 }

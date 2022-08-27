@@ -9,6 +9,7 @@ import Foundation
 
 internal struct CurrentDTO : Codable {
     internal enum CodingKeys: String, CodingKey {
+        case observationTime = "observation_time"
         case temperature
         case weatherCode = "weather_code"
         case weatherIcon = "weather_icons"
@@ -25,6 +26,7 @@ internal struct CurrentDTO : Codable {
         case visibility
     }
     
+    internal let observationTime: String?
     internal let temperature: Int?
     internal let weatherCode: Int?
     internal let weatherIcon: [String]?
@@ -33,7 +35,7 @@ internal struct CurrentDTO : Codable {
     internal let windDegree: Int?
     internal let windDir: String?
     internal let pressure: Int?
-    internal let precip: Int?
+    internal let precip: Double?
     internal let humidity: Int?
     internal let cloudcover: Int?
     internal let feelslike: Int?

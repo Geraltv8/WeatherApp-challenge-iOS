@@ -13,6 +13,12 @@ internal protocol RepositoryProtocol {
         servicePath service: String,
         parameters: Parameters,
         onRequestSuccess: @escaping (WeatherModel) -> Void,
+        onRequestFailed: @escaping (_ error: APIErrorModel) ->Void
+    )
+    
+    func getForecast(
+        city: String,
+        onRequestSuccess: @escaping (ForecastModel) -> Void,
         onRequestFailed: @escaping (_ error: Error?) ->Void
     )
 }

@@ -10,6 +10,7 @@ import Foundation
 internal enum CurrentMapper {
     internal static func map(_ dto: CurrentDTO) -> CurrentModel {
         return CurrentModel(
+            observationTime: dto.observationTime ?? "",
             temperature: dto.temperature ?? .zero,
             weatherCode: dto.weatherCode ?? .zero,
             weatherIcon: dto.weatherIcon ?? [],

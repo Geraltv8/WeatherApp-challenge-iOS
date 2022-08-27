@@ -8,5 +8,6 @@
 import Foundation
 
 internal struct ForecastModel {
-    internal let hourly: [HourlyModel]
+    internal let data: [ForecastDataModel]
+    internal let cityName: String
 }

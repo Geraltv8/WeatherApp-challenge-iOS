@@ -8,6 +8,7 @@
 import Foundation
 
 internal struct CurrentModel {
+    internal let observationTime: String
     internal let temperature: Int
     internal let weatherCode: Int
     internal let weatherIcon: [String]
@@ -16,7 +17,7 @@ internal struct CurrentModel {
     internal let windDegree: Int
     internal let windDir: String
     internal let pressure: Int
-    internal let precip: Int
+    internal let precip: Double
     internal let humidity: Int
     internal let cloudcover: Int
     internal let feelslike: Int

@@ -11,8 +11,7 @@ internal enum WeatherMapper {
     internal static func map(_ dto: WeatherDTO) -> WeatherModel {
         return WeatherModel(
             location: LocationMapper.map(dto.location),
-            current: CurrentMapper.map(dto.current),
-            forecast: ForecastMapper.map(dto.forecast ?? nil)
+            current: CurrentMapper.map(dto.current)
         )
     }
 }
