@@ -70,6 +70,15 @@
 		657D34A728B56403009DE1F7 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657D34A628B56403009DE1F7 /* Repository.swift */; };
 		657D34AA28B5649E009DE1F7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657D34A928B5649E009DE1F7 /* Constants.swift */; };
 		657D34B028B56B62009DE1F7 /* WeatherDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657D34AF28B56B62009DE1F7 /* WeatherDTO.swift */; };
+		65D6B04028BC0C8800E112D4 /* ForecastMapperTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D6B03F28BC0C8800E112D4 /* ForecastMapperTest.swift */; };
+		65D6B04228BC0DBF00E112D4 /* forecast_success.json in Resources */ = {isa = PBXBuildFile; fileRef = 65D6B04128BC0DBF00E112D4 /* forecast_success.json */; };
+		65D6B04428BC0DE200E112D4 /* forecast_success_optional.json in Resources */ = {isa = PBXBuildFile; fileRef = 65D6B04328BC0DE200E112D4 /* forecast_success_optional.json */; };
+		65D6B04728BC185E00E112D4 /* RepositoryMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D6B04628BC185E00E112D4 /* RepositoryMock.swift */; };
+		65D6B04928BC1CD100E112D4 /* MainRouterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D6B04828BC1CD100E112D4 /* MainRouterMock.swift */; };
+		65D6B04B28BC1D4700E112D4 /* MainViewControllerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D6B04A28BC1D4700E112D4 /* MainViewControllerMock.swift */; };
+		65D6B04E28BC1EB900E112D4 /* MainPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D6B04D28BC1EB900E112D4 /* MainPresenterTest.swift */; };
+		65D6B05028BC249900E112D4 /* weather_error.json in Resources */ = {isa = PBXBuildFile; fileRef = 65D6B04F28BC249900E112D4 /* weather_error.json */; };
+		65D6B05228BC24BB00E112D4 /* forecast_error.json in Resources */ = {isa = PBXBuildFile; fileRef = 65D6B05128BC24BB00E112D4 /* forecast_error.json */; };
 		A8D046EA5F8F3C949ED5FC4B /* Pods_WeatherAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19C62CE16151D8D4D06B5CB2 /* Pods_WeatherAppTests.framework */; };
 		C63D3C964DDDC030F5F651A6 /* Pods_WeatherApp_WeatherAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC4D835A431D0041EB350BE2 /* Pods_WeatherApp_WeatherAppUITests.framework */; };
 /* End PBXBuildFile section */
@@ -163,6 +172,15 @@
 		657D34A628B56403009DE1F7 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		657D34A928B5649E009DE1F7 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		657D34AF28B56B62009DE1F7 /* WeatherDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDTO.swift; sourceTree = "<group>"; };
+		65D6B03F28BC0C8800E112D4 /* ForecastMapperTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastMapperTest.swift; sourceTree = "<group>"; };
+		65D6B04128BC0DBF00E112D4 /* forecast_success.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = forecast_success.json; sourceTree = "<group>"; };
+		65D6B04328BC0DE200E112D4 /* forecast_success_optional.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = forecast_success_optional.json; sourceTree = "<group>"; };
+		65D6B04628BC185E00E112D4 /* RepositoryMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryMock.swift; sourceTree = "<group>"; };
+		65D6B04828BC1CD100E112D4 /* MainRouterMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouterMock.swift; sourceTree = "<group>"; };
+		65D6B04A28BC1D4700E112D4 /* MainViewControllerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewControllerMock.swift; sourceTree = "<group>"; };
+		65D6B04D28BC1EB900E112D4 /* MainPresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenterTest.swift; sourceTree = "<group>"; };
+		65D6B04F28BC249900E112D4 /* weather_error.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = weather_error.json; sourceTree = "<group>"; };
+		65D6B05128BC24BB00E112D4 /* forecast_error.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = forecast_error.json; sourceTree = "<group>"; };
 		AC4D835A431D0041EB350BE2 /* Pods_WeatherApp_WeatherAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeatherApp_WeatherAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4A68119B612A74C5545D737 /* Pods-WeatherApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherApp.release.xcconfig"; path = "Target Support Files/Pods-WeatherApp/Pods-WeatherApp.release.xcconfig"; sourceTree = "<group>"; };
 		C8F8D841692DDFAA2E05BC73 /* Pods-WeatherAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherAppTests.release.xcconfig"; path = "Target Support Files/Pods-WeatherAppTests/Pods-WeatherAppTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -350,6 +368,10 @@
 				6563D8A228B912190012AE7E /* weather_success.json */,
 				6563D8A428B913180012AE7E /* weather_success_optional.json */,
 				6563D8A628B913D50012AE7E /* api_error.json */,
+				65D6B04128BC0DBF00E112D4 /* forecast_success.json */,
+				65D6B04328BC0DE200E112D4 /* forecast_success_optional.json */,
+				65D6B04F28BC249900E112D4 /* weather_error.json */,
+				65D6B05128BC24BB00E112D4 /* forecast_error.json */,
 			);
 			path = JSON;
 			sourceTree = "<group>";
@@ -359,6 +381,7 @@
 			children = (
 				6563D8A828B915590012AE7E /* ErrorsMapperTest.swift */,
 				6563D8AA28B9156D0012AE7E /* WeatherMapperTest.swift */,
+				65D6B03F28BC0C8800E112D4 /* ForecastMapperTest.swift */,
 			);
 			path = MapperTest;
 			sourceTree = "<group>";
@@ -435,6 +458,8 @@
 		657D348828B540A0009DE1F7 /* WeatherAppTests */ = {
 			isa = PBXGroup;
 			children = (
+				65D6B04C28BC1EA700E112D4 /* PresenterTest */,
+				65D6B04528BC184600E112D4 /* Mocks */,
 				6563D89B28B905840012AE7E /* MapperTest */,
 				6563D89A28B905770012AE7E /* JSON */,
 				657D348928B540A0009DE1F7 /* WeatherAppTests.swift */,
@@ -535,6 +560,24 @@
 				652AB61F28B8858F00FA18B7 /* Error */,
 			);
 			path = Mapper;
+			sourceTree = "<group>";
+		};
+		65D6B04528BC184600E112D4 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				65D6B04628BC185E00E112D4 /* RepositoryMock.swift */,
+				65D6B04828BC1CD100E112D4 /* MainRouterMock.swift */,
+				65D6B04A28BC1D4700E112D4 /* MainViewControllerMock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		65D6B04C28BC1EA700E112D4 /* PresenterTest */ = {
+			isa = PBXGroup;
+			children = (
+				65D6B04D28BC1EB900E112D4 /* MainPresenterTest.swift */,
+			);
+			path = PresenterTest;
 			sourceTree = "<group>";
 		};
 		8AA4FB04FB517C49303A158B /* Pods */ = {
@@ -673,9 +716,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65D6B04228BC0DBF00E112D4 /* forecast_success.json in Resources */,
+				65D6B05028BC249900E112D4 /* weather_error.json in Resources */,
 				6563D8A528B913180012AE7E /* weather_success_optional.json in Resources */,
 				6563D8A728B913D50012AE7E /* api_error.json in Resources */,
 				6563D8A328B912190012AE7E /* weather_success.json in Resources */,
+				65D6B05228BC24BB00E112D4 /* forecast_error.json in Resources */,
+				65D6B04428BC0DE200E112D4 /* forecast_success_optional.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -867,10 +914,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				6563D89D28B905AF0012AE7E /* JsonMapperHelper.swift in Sources */,
+				65D6B04E28BC1EB900E112D4 /* MainPresenterTest.swift in Sources */,
 				657D348A28B540A0009DE1F7 /* WeatherAppTests.swift in Sources */,
 				6563D8AB28B9156D0012AE7E /* WeatherMapperTest.swift in Sources */,
+				65D6B04028BC0C8800E112D4 /* ForecastMapperTest.swift in Sources */,
+				65D6B04728BC185E00E112D4 /* RepositoryMock.swift in Sources */,
 				6563D8A128B911EC0012AE7E /* JsonFiles.swift in Sources */,
 				6563D8A928B915590012AE7E /* ErrorsMapperTest.swift in Sources */,
+				65D6B04B28BC1D4700E112D4 /* MainViewControllerMock.swift in Sources */,
+				65D6B04928BC1CD100E112D4 /* MainRouterMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

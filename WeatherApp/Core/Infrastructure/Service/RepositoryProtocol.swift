@@ -10,8 +10,7 @@ import Alamofire
 
 internal protocol RepositoryProtocol {
     func getWeather(
-        servicePath service: String,
-        parameters: Parameters,
+        city: String,
         onRequestSuccess: @escaping (WeatherModel) -> Void,
         onRequestFailed: @escaping (_ error: APIErrorModel) ->Void
     )
@@ -19,6 +18,6 @@ internal protocol RepositoryProtocol {
     func getForecast(
         city: String,
         onRequestSuccess: @escaping (ForecastModel) -> Void,
-        onRequestFailed: @escaping (_ error: Error?) ->Void
+        onRequestFailed: @escaping (_ error: APIErrorModel) ->Void
     )
 }

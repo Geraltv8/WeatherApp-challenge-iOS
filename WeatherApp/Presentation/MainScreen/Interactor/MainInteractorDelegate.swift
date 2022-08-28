@@ -12,5 +12,5 @@ internal protocol MainInteractorDelegate {
     func onFailed(error: APIErrorModel)
     
     func onSuccessForecast(model: ForecastModel)
-    func onFailedForecast(error: Error?)
+    func onFailedForecast(error: APIErrorModel)
 }

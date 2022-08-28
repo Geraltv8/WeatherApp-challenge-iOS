@@ -11,6 +11,6 @@ import Alamofire
 internal protocol MainInteractorProtocol {
     var presenter: MainInteractorDelegate? {get set}
     
-    func getWeather(servicePath: String, parameters: Parameters)
+    func getWeather(city: String)
     func getForecast(city: String)
 }

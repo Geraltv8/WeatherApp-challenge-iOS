@@ -16,14 +16,13 @@ internal class MainInteractor: MainInteractorProtocol {
         self.repository = repository
     }
     
-    internal func getWeather(servicePath: String, parameters: Parameters) {
+    internal func getWeather(city: String) {
         guard let presenter = presenter else {
             return
         }
         
         self.repository.getWeather(
-            servicePath: servicePath,
-            parameters: parameters,
+            city: city,
             onRequestSuccess: presenter.onSuccess(model:),
             onRequestFailed: presenter.onFailed(error:)
         )

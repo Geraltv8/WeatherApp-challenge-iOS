@@ -13,5 +13,5 @@ internal struct ForecastDTO: Codable {
         case cityName = "city_name"
     }
     internal let data: [ForecastDataDTO]
-    internal let cityName: String
+    internal let cityName: String?
 }
